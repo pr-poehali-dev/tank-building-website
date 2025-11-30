@@ -89,7 +89,7 @@ const tanks: Tank[] = [
     armor: "Композитная броня Chobham второго поколения",
     mainGun: "120-мм нарезная пушка L30A1",
     description: "Британский танк с уникальной нарезной пушкой и исключительной точностью стрельбы.",
-    image: "https://cdn.poehali.dev/files/f27d69dc-077d-452f-889f-811884ba538a.jpg"
+    image: "https://cdn.poehali.dev/files/2087c2e0-2717-46ee-b949-fed251a7153f.jpg"
   },
   {
     id: 6,
