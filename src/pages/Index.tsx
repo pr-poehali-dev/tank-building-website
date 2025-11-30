@@ -50,7 +50,7 @@ const tanks: Tank[] = [
     armor: "Композитная броня Chobham",
     mainGun: "120-мм гладкоствольная пушка M256",
     description: "Американский основной боевой танк третьего поколения с газотурбинным двигателем.",
-    image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=800&q=80"
+    image: "https://cdn.poehali.dev/files/f27d69dc-077d-452f-889f-811884ba538a.jpg"
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ const tanks: Tank[] = [
     armor: "Многослойная композитная броня",
     mainGun: "120-мм гладкоствольная пушка Rh-120",
     description: "Немецкий танк с превосходной точностью огня и высокой подвижностью.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80"
+    image: "https://cdn.poehali.dev/files/f27d69dc-077d-452f-889f-811884ba538a.jpg"
   }
 ];
 
