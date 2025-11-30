@@ -63,7 +63,7 @@ const tanks: Tank[] = [
     armor: "Многослойная композитная броня",
     mainGun: "120-мм гладкоствольная пушка Rh-120",
     description: "Немецкий танк с превосходной точностью огня и высокой подвижностью.",
-    image: "https://cdn.poehali.dev/files/f27d69dc-077d-452f-889f-811884ba538a.jpg"
+    image: "https://cdn.poehali.dev/files/baa57b6a-36ac-4528-bb9a-4a19c0421afb.jpg"
   }
 ];
 
@@ -71,7 +71,7 @@ const Index = () => {
   const [selectedTank, setSelectedTank] = useState<Tank | null>(null);
   const [filterEra, setFilterEra] = useState<string>("Все");
 
-  const eras = ["Все", "Вторая мировая война", "Современность", "Будущее"];
+  const eras = ["Все", "Современность", "Будущее", "Прототипы"];
 
   const filteredTanks = filterEra === "Все" 
     ? tanks 
@@ -110,7 +110,7 @@ const Index = () => {
               key={era}
               variant={filterEra === era ? "default" : "outline"}
               onClick={() => setFilterEra(era)}
-              className={filterEra === era ? "bg-primary text-primary-foreground" : "border-border hover:bg-muted"}
+              className={`transition-all duration-300 ${filterEra === era ? "bg-primary text-primary-foreground animate-glow" : "border-border hover:bg-muted hover:scale-105"}`}
             >
               {era}
             </Button>
@@ -121,18 +121,19 @@ const Index = () => {
           {filteredTanks.map((tank, index) => (
             <Card 
               key={tank.id}
-              className="overflow-hidden hover-scale cursor-pointer border-border bg-card animate-fade-in group"
+              className="overflow-hidden hover-scale cursor-pointer border-border bg-card animate-fade-in group relative"
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => setSelectedTank(tank)}
             >
               <div className="relative h-64 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img 
                   src={tank.image} 
                   alt={tank.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                 />
-                <div className="absolute top-4 right-4">
-                  <Badge className="bg-secondary text-secondary-foreground">
+                <div className="absolute top-4 right-4 z-20">
+                  <Badge className="bg-secondary text-secondary-foreground animate-float">
                     {tank.era}
                   </Badge>
                 </div>
