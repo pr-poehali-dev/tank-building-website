@@ -37,7 +37,7 @@ const tanks: Tank[] = [
     armor: "Динамическая защита «Реликт»",
     mainGun: "125-мм гладкоствольная пушка 2А46М-5",
     description: "Модернизированная версия танка Т-90, оснащенная современными системами управления огнем и улучшенной броней.",
-    image: "https://cdn.poehali.dev/projects/b97024df-7ddd-4684-9e72-c345af8797c2/files/6e30862c-8ef2-42fa-9a0f-ec6c6748070f.jpg"
+    image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=800&q=80"
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ const tanks: Tank[] = [
     armor: "Многослойная композитная броня",
     mainGun: "125-мм гладкоствольная пушка 2А82-1М",
     description: "Революционная платформа с необитаемой башней и передовыми технологиями защиты и огневой мощи.",
-    image: "https://cdn.poehali.dev/projects/b97024df-7ddd-4684-9e72-c345af8797c2/files/59ad9d17-1907-464c-964e-cc4656838666.jpg"
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80"
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ const tanks: Tank[] = [
     armor: "Наклонная броня 45-90 мм",
     mainGun: "85-мм пушка ЗИС-С-53",
     description: "Легендарный советский танк Великой Отечественной войны, признанный одним из лучших танков своего времени.",
-    image: "https://cdn.poehali.dev/projects/b97024df-7ddd-4684-9e72-c345af8797c2/files/0bfda8b1-90d6-4fa5-9a8e-5b80f7b09322.jpg"
+    image: "https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80"
   }
 ];
 
