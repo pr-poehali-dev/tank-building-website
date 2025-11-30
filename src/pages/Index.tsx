@@ -141,7 +141,7 @@ const tanks: Tank[] = [
     armor: "Модульная композитная броня",
     mainGun: "120-мм гладкоствольная пушка GIAT CN120-26",
     description: "Французский танк с автоматом заряжания и цифровой системой управления огнем.",
-    image: "https://cdn.poehali.dev/files/f27d69dc-077d-452f-889f-811884ba538a.jpg"
+    image: "https://cdn.poehali.dev/files/68d87176-a3ef-48b4-b35c-55bf17e4ee11.jpg"
   }
 ];
 
